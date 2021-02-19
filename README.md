@@ -1,3 +1,3 @@
 
-<h1>B2FREE - Software para aluguel de espaço de trabalho em estabelecimentos comerciais.</h1>
-<h2> BACKEND </h2>
+<h1>B2FREE</h1>
+<h2>Software para aluguel de espaço de trabalho em estabelecimentos comerciais.</h2>
