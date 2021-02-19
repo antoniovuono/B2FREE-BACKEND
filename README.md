@@ -12,8 +12,6 @@
 
 <h2>Tecnologias utilizadas:</h2>
 <ul>
-    <li>Javascript</li>
-    <li>NodeJS</li>
-    <li>Docker</li>
-    <li>PostgresSQL</li>
+    <li>Express</li>
+   
 </ul>
