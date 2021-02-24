@@ -13,5 +13,7 @@
 <h2>Tecnologias utilizadas:</h2>
 <ul>
     <li>Express</li>
-   
+    <li>SequelizeORM</li>
+    <li>jwt</li>
+    <li>Yup</li>
 </ul>
