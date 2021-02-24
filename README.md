@@ -14,11 +14,12 @@
 <ul>
     <li>express</li>
     <li>sequelize</li>
-    <li>jwt</li>
+    <li>jsonwebtoken</li>
     <li>yup</li>
     <li>bcryptjs</li>
     <li>dotenv</li>
     <li>nodemon</li>
     <li>prettier</li>
     <li>eslint</li>
+    <li>multer</li>
 </ul>
