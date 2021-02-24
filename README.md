@@ -12,8 +12,13 @@
 
 <h2>Tecnologias utilizadas:</h2>
 <ul>
-    <li>Express</li>
-    <li>SequelizeORM</li>
+    <li>express</li>
+    <li>sequelize</li>
     <li>jwt</li>
-    <li>Yup</li>
+    <li>yup</li>
+    <li>bcryptjs</li>
+    <li>dotenv</li>
+    <li>nodemon</li>
+    <li>prettier</li>
+    <li>eslint</li>
 </ul>
