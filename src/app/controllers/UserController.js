@@ -1,5 +1,6 @@
 import * as Yup from 'yup';
 import User from '../models/User';
+import File from '../models/File';
 
 class UserController {
     async store(req, res) {
@@ -54,6 +55,9 @@ class UserController {
         const { email, oldPassword } = req.body;
 
         const user = await User.findByPk(req.userId);
+        if (!user) {
+            return res.status(400).json({ error: 'User doenst not exist' });
+        }
 
         if (email !== user.email) {
             const userExists = await User.findOne({ where: { email } });
@@ -69,13 +73,22 @@ class UserController {
 
         await user.update(req.body);
 
-        const [id, name, cpf] = await user.findByPk(req.userId);
+        const [id, name, cpf, avatar] = await User.findByPk(req.userId, {
+            include: [
+                {
+                    model: File,
+                    as: 'avatar',
+                    attributes: ['id', 'path', 'url'],
+                },
+            ],
+        });
 
         return res.json({
             id,
             name,
             cpf,
             email,
+            avatar,
         });
     }
 }
