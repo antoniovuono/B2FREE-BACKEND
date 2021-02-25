@@ -1,6 +1,8 @@
 
 <h1>B2FREE</h1>
-<p>  O projeto em questão está baseado em um aplicativo que visa realizar a conexão entre prestadores de serviços autônomos do setor de beleza e estabelecimentos comerciais que necessitam realizar o aluguel de cadeiras a fim de suprir a demanda existente, evitando o regime de contratação tradicional para evitar a burocracia e reduzir custos. O aplicativo facilitará a busca por profissionais por parte dos estabelecimentos e ajudará os prestadores de serviços a encontrar espaços para realizar o seu trabalho de forma inovadora e intuitiva. O formato de parceria entre ambas as partes será prefixado no ato do aluguel.</p>
+<p> O projeto em questão está baseado em um aplicativo que visa realizar a conexão entre prestadores de serviços autônomos do setor de beleza e estabelecimentos comerciais que necessitam realizar o aluguel de cadeiras a fim de suprir a demanda existente, evitando o regime de contratação tradicional para evitar a burocracia e reduzir custos.</p>
+
+<p> O aplicativo facilitará a busca por profissionais por parte dos estabelecimentos e ajudará os prestadores de serviços a encontrar espaços para realizar o seu trabalho de forma inovadora e intuitiva. O formato de parceria entre ambas as partes será prefixado no ato do aluguel. </p>
 
 <h2>BACK-END:</h2>
 <p> O projeto em questão será desenvolvido utilizando o formato de arquitetura MVC, que nos possibilita uma clara separação entre as camadas de visualização do software e das regras de negócio. A arquitetura também tornará mais fácil a manutenção dos códigos e permitirá o desenvolvimento, testes e manutenção de forma isolada entre as camadas.</p>
