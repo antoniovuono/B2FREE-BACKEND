@@ -40,5 +40,8 @@
    <ul> 
     <li><b>Clonar o repositório na pasta desejada:</li></b>
     <code> git clone https://github.com/antoniovuono/B2FREE-BACKEND.git </code>
+    
+    <li><b>Clonar o repositório na pasta desejada:</li></b>
+    <code> git clone https://github.com/antoniovuono/B2FREE-BACKEND.git </code>
    </ul>
 
