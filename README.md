@@ -37,12 +37,8 @@
 <h2>Rodando a aplicação:</h2>
 <p> Para rodar a api na sua máquina, basta seguir os seguintes passos... </p>
 
-   <h3> Clonar o projeto na pasta desejada: </h3>
+   <ul> 
+    <li><b>Clonar o repositório na pasta desejada:</li></b>
     <code> git clone https://github.com/antoniovuono/B2FREE-BACKEND.git </code>
-    
-    <li>Instalar as dependências do projeto...</li>
-    <code> yarn </code>
-    
-    <li>Rodar o projeto...</li>
-    <code> yarn dev </code>
+   </ul>
 
