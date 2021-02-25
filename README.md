@@ -11,6 +11,8 @@
 
 <p>Utilizar o modelo em questão, nos permite realizar uma comunicação entre múltiplos clientes utilizando a mesma API pública, podendo também ter uma comunicação caso necessário com serviços externos. Dessa forma conseguimos criar um back-end e realizar chamadas tanto do sistema WEB quanto para o Mobile. </p>
 
+<h2>Tecnologias utilizadas:</h2>
+
 <ul>
     <li>Javascript</li>
     <li>NodeJS</li>
@@ -18,7 +20,7 @@
     <li>PostgresSQL</li>
 </ul>
 
-<h2>Tecnologias utilizadas:</h2>
+<h2>Bibliotecas utilizadas:</h2>
 <ul>
     <li>express</li>
     <li>sequelize</li>
