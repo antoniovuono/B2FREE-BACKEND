@@ -40,8 +40,13 @@
    <ul> 
     <li><b>Clonar o repositório na pasta desejada:</li></b>
     <code> git clone https://github.com/antoniovuono/B2FREE-BACKEND.git </code>
-    
-    <li><b>Clonar o repositório na pasta desejada:</li></b>
-    <code> git clone https://github.com/antoniovuono/B2FREE-BACKEND.git </code>
+   </ul>
+   <ul> 
+    <li><b>Instalar bibliotecas do projeto utilizando o comando:</li></b>
+    <code> yarn </code>
+   </ul>
+    <ul> 
+    <li><b>Rodar a api:</li></b>
+    <code> yarn dev </code>
    </ul>
 
