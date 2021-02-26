@@ -5,8 +5,10 @@ import multerConfig from './config/multer';
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
+import RentalSpaceController from './app/controllers/RentalSpaceController';
 
 import authMiddleware from './app/middlewares/auth';
+import EstablhishmentController from './app/controllers/EstablhishmentController';
 
 const routes = new Router();
 // Importando o multer para trabalhar como um Middleware
@@ -19,6 +21,10 @@ routes.use(authMiddleware);
 
 routes.put('/users', UserController.update);
 
+routes.get('/establhishment', EstablhishmentController.index);
+
 routes.post('/files', upload.single('file'), FileController.store);
+
+routes.post('/rentalspace', RentalSpaceController.store);
 
 export default routes;
