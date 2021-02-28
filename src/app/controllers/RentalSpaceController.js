@@ -20,7 +20,7 @@ class RentalSpaceController {
          */
 
         const checkIsEstablishment = await User.findOne({
-            where: { id: req.userId, establishment: true },
+            where: { establishment: true },
         });
 
         if (!checkIsEstablishment) {
