@@ -32,6 +32,21 @@ class RentalSpaceController {
             });
         }
 
+        // Check if name exists
+
+        const nameExists = await RentalSpace.findOne({
+            where: {
+                name: req.body.name,
+                establishment_id: req.body.establishment_id,
+            },
+        });
+
+        if (nameExists) {
+            return res
+                .status(400)
+                .json({ error: 'You already created this place' });
+        }
+
         const { id, name, status, percentage } = await RentalSpace.create(
             req.body
         );
