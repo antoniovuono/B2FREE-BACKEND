@@ -19,15 +19,16 @@ class RentalSpaceController {
          * Check if establishment_id is establishment
          */
 
+        const { establishment_id } = req.body;
+
         const checkIsEstablishment = await User.findOne({
-            where: {
-                establishment: true,
-            },
+            where: { id: establishment_id, establishment: true },
         });
 
         if (!checkIsEstablishment) {
             return res.status(401).json({
-                error: 'User is not a establishment!',
+                error:
+                    'You can only create a rental space with establishments !',
             });
         }
 
@@ -40,6 +41,7 @@ class RentalSpaceController {
             name,
             status,
             percentage,
+            establishment_id,
         });
     }
 }
