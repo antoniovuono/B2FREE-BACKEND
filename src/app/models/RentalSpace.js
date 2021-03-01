@@ -15,6 +15,13 @@ class RentalSpace extends Model {
 
         return this;
     }
+
+    static associate(models) {
+        this.belongsTo(models.User, {
+            foreignKey: 'establishment_id',
+            as: 'establishment',
+        });
+    }
 }
 
 export default RentalSpace;
