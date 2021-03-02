@@ -7,6 +7,7 @@ import File from '../models/File';
 class RentalSpaceController {
     // List Rental spaces
     async index(req, res) {
+        const { page = 1, limit = 5 } = req.query;
         const rentalSpaces = await RentalSpace.findAll({
             where: {
                 establishment_id: req.userId,
@@ -18,7 +19,8 @@ class RentalSpaceController {
                 'percentage',
                 'establishment_id',
             ],
-
+            limit,
+            offset: (page - 1) * limit,
             include: [
                 {
                     model: User,
