@@ -27,5 +27,6 @@ routes.post('/files', upload.single('file'), FileController.store);
 
 routes.post('/rentalspace', RentalSpaceController.store);
 routes.get('/rentalspace', RentalSpaceController.index);
+routes.delete('/rentalspace/:id', RentalSpaceController.delete);
 
 export default routes;

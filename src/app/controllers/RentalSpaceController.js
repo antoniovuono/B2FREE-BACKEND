@@ -93,6 +93,32 @@ class RentalSpaceController {
             establishment_id,
         });
     }
+
+    // Delete Rental Spaces
+
+    async delete(req, res) {
+        const rentalSpace = await RentalSpace.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    as: 'establishment',
+                    attributes: ['id', 'name'],
+                },
+            ],
+        });
+
+        // Check if establishment to delete a Rental Space
+
+        if (rentalSpace.establishment_id !== req.userId) {
+            return res.status(401).json({
+                error: "You don't have permission to delete this rental space!",
+            });
+        }
+
+        await rentalSpace.destroy();
+
+        return res.json(rentalSpace);
+    }
 }
 
 export default new RentalSpaceController();
