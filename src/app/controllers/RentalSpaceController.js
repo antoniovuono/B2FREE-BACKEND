@@ -2,8 +2,42 @@ import * as Yup from 'yup';
 
 import RentalSpace from '../models/RentalSpace';
 import User from '../models/User';
+import File from '../models/File';
 
 class RentalSpaceController {
+    // List Rental spaces
+    async index(req, res) {
+        const rentalSpaces = await RentalSpace.findAll({
+            where: {
+                establishment_id: req.userId,
+            },
+            attributes: [
+                'id',
+                'name',
+                'status',
+                'percentage',
+                'establishment_id',
+            ],
+
+            include: [
+                {
+                    model: User,
+                    as: 'establishment',
+                    attributes: ['id', 'name'],
+                    include: [
+                        {
+                            model: File,
+                            as: 'avatar',
+                            attributes: ['id', 'path', 'url'],
+                        },
+                    ],
+                },
+            ],
+        });
+
+        return res.json(rentalSpaces);
+    }
+
     // Create Rental Space
     async store(req, res) {
         const schema = Yup.object().shape({
@@ -32,7 +66,7 @@ class RentalSpaceController {
             });
         }
 
-        // Check if name exists
+        // Check if you already created this space
 
         const nameExists = await RentalSpace.findOne({
             where: {

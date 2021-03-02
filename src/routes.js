@@ -26,5 +26,6 @@ routes.get('/establhishment', EstablhishmentController.index);
 routes.post('/files', upload.single('file'), FileController.store);
 
 routes.post('/rentalspace', RentalSpaceController.store);
+routes.get('/rentalspace', RentalSpaceController.index);
 
 export default routes;
