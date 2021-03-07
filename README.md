@@ -32,6 +32,8 @@
     <li>prettier</li>
     <li>eslint</li>
     <li>multer</li>
+    <li>datefns</li>
+    <li>cors</li>
 </ul>
 
 <h2>Rodando a aplicação:</h2>
