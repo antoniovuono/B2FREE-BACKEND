@@ -55,10 +55,8 @@ class RentalSpaceController {
          * Check if establishment_id is establishment
          */
 
-        const { establishment_id } = req.body;
-
         const checkIsEstablishment = await User.findOne({
-            where: { id: establishment_id, establishment: true },
+            where: { id: req.userId, establishment: true },
         });
 
         if (!checkIsEstablishment) {
@@ -68,12 +66,14 @@ class RentalSpaceController {
             });
         }
 
-        // Check if you already created this space
+        /**
+         * Check if name exists
+         */
 
         const nameExists = await RentalSpace.findOne({
             where: {
                 name: req.body.name,
-                establishment_id: req.body.establishment_id,
+                establishment_id: req.userId,
             },
         });
 
@@ -83,16 +83,20 @@ class RentalSpaceController {
                 .json({ error: 'You already created this place' });
         }
 
-        const { id, name, status, percentage } = await RentalSpace.create(
-            req.body
-        );
+        // store at the database
 
-        return res.json({
+        const { id, name, status, percentage } = req.body;
+
+        const createRentalSpace = await RentalSpace.create({
             id,
             name,
             status,
             percentage,
-            establishment_id,
+            establishment_id: req.userId,
+        });
+
+        return res.json({
+            createRentalSpace,
         });
     }
 

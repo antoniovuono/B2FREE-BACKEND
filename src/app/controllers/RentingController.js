@@ -30,7 +30,7 @@ class RentingController {
 
         if (!checkisEstablishment) {
             return res.status(401).json({
-                error: 'You can only rent with establishments users !',
+                error: 'You cant renting a space with establishments !',
             });
         }
 
@@ -46,6 +46,20 @@ class RentingController {
             return res.status(401).json({
                 error: 'You can only create a rent with rental spaces ! ',
             });
+        }
+
+        /**
+         * Check if you are creating with a normal user
+         */
+
+        const checkisUser = await User.findOne({
+            where: { id: req.userId, establishment: false },
+        });
+
+        if (!checkisUser) {
+            return res
+                .status(401)
+                .json({ error: 'You can only create a rent with users !' });
         }
 
         /**
