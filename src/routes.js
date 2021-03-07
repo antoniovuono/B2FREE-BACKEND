@@ -9,6 +9,7 @@ import RentalSpaceController from './app/controllers/RentalSpaceController';
 
 import authMiddleware from './app/middlewares/auth';
 import EstablhishmentController from './app/controllers/EstablhishmentController';
+import RentingController from './app/controllers/RentingController';
 
 const routes = new Router();
 // Importando o multer para trabalhar como um Middleware
@@ -28,5 +29,7 @@ routes.post('/files', upload.single('file'), FileController.store);
 routes.post('/rentalspace', RentalSpaceController.store);
 routes.get('/rentalspace', RentalSpaceController.index);
 routes.delete('/rentalspace/:id', RentalSpaceController.delete);
+
+routes.post('/renting', RentingController.store);
 
 export default routes;

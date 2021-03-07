@@ -1,22 +1,15 @@
 import Sequelize, { Model } from 'sequelize';
-import { isBefore, subHours } from 'date-fns';
+import { isBefore } from 'date-fns';
 
-class Appointment extends Model {
+class Renting extends Model {
     static init(sequelize) {
         super.init(
             {
                 date: Sequelize.STRING,
-                canceled_at: Sequelize.DATE,
                 past: {
                     type: Sequelize.VIRTUAL,
                     get() {
                         return isBefore(this.date, new Date());
-                    },
-                },
-                cancelable: {
-                    type: Sequelize.VIRTUAL,
-                    get() {
-                        return isBefore(new Date(), subHours(this.date, 2));
                     },
                 },
             },
@@ -41,4 +34,4 @@ class Appointment extends Model {
     }
 }
 
-export default Appointment;
+export default Renting;
