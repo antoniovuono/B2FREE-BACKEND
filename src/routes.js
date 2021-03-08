@@ -31,5 +31,6 @@ routes.get('/rentalspace', RentalSpaceController.index);
 routes.delete('/rentalspace/:id', RentalSpaceController.delete);
 
 routes.post('/renting', RentingController.store);
+routes.get('/renting', RentingController.index);
 
 export default routes;

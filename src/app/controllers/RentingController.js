@@ -3,9 +3,46 @@ import { startOfHour, parseISO, isBefore } from 'date-fns';
 
 import Renting from '../models/Renting';
 import User from '../models/User';
+import File from '../models/File';
 import RentalSpace from '../models/RentalSpace';
 
 class RentingController {
+    // List rents
+    async index(req, res) {
+        const { page = 1, limit = 5 } = req.query;
+        const renting = await Renting.findAll({
+            where: {
+                user_id: req.userId,
+            },
+            order: ['date'],
+            attributes: [
+                'id',
+                'user_id',
+                'establishment_id',
+                'rental_space_id',
+                'date',
+            ],
+            limit,
+            offset: (page - 1) * limit,
+            include: [
+                {
+                    model: User,
+                    as: 'establishment',
+                    attributes: ['id', 'name'],
+                    include: [
+                        {
+                            model: File,
+                            as: 'avatar',
+                            attributes: ['id', 'path', 'url'],
+                        },
+                    ],
+                },
+            ],
+        });
+
+        return res.json(renting);
+    }
+
     // Create a rent
     async store(req, res) {
         const schema = Yup.object().shape({

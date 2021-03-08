@@ -11,11 +11,6 @@ module.exports = {
                 type: Sequelize.STRING,
                 allowNull: false,
             },
-            status: {
-                type: Sequelize.BOOLEAN,
-                defaultValue: false,
-                allowNull: false,
-            },
             percentage: {
                 type: Sequelize.STRING,
                 allowNull: false,

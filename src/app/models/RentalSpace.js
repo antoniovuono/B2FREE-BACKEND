@@ -5,7 +5,6 @@ class RentalSpace extends Model {
         super.init(
             {
                 name: Sequelize.STRING,
-                status: Sequelize.BOOLEAN,
                 percentage: Sequelize.STRING,
             },
             {

@@ -12,13 +12,7 @@ class RentalSpaceController {
             where: {
                 establishment_id: req.userId,
             },
-            attributes: [
-                'id',
-                'name',
-                'status',
-                'percentage',
-                'establishment_id',
-            ],
+            attributes: ['id', 'name', 'percentage', 'establishment_id'],
             limit,
             offset: (page - 1) * limit,
             include: [
@@ -72,8 +66,8 @@ class RentalSpaceController {
 
         const nameExists = await RentalSpace.findOne({
             where: {
-                name: req.body.name,
                 establishment_id: req.userId,
+                name: req.body.name,
             },
         });
 
@@ -85,12 +79,11 @@ class RentalSpaceController {
 
         // store at the database
 
-        const { id, name, status, percentage } = req.body;
+        const { id, name, percentage } = req.body;
 
         const createRentalSpace = await RentalSpace.create({
             id,
             name,
-            status,
             percentage,
             establishment_id: req.userId,
         });
