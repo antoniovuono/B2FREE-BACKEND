@@ -58,4 +58,8 @@
     <li><b>Rodar a api:</li></b>
     <code> yarn dev </code>
    </ul>
+   
+   <h3>Versão WEB: </h3>
+   <link>https://github.com/antoniovuono/b2free-web </link>
+   <h3>Versão Mobile: </h3>
 
