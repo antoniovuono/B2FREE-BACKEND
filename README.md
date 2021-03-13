@@ -8,9 +8,9 @@
 <h2>BACK-END:</h2>
 
 <p float="left">
-  <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/135056738/original/f4a1f882db100ea22db39e053f0f3a942654378e/create-you-a-rest-api.png" width="300" />
-  <img src="https://lh3.googleusercontent.com/proxy/AEwZit4xwN-MTyxxsVEA9_j9tE0ZA-8byc5OqTCLg4PHTknKZV9S_iFo5q6WQih-fJWKXGPcfgcsAQ_HS4sdaHw87Q" width="300" /> 
-  <img src="https://miro.medium.com/max/1200/1*ahpxPO0jLGb9EWrY2qQPhg.jpeg" width="300" />
+  <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/135056738/original/f4a1f882db100ea22db39e053f0f3a942654378e/create-you-a-rest-api.png" width="200" />
+  <img src="https://lh3.googleusercontent.com/proxy/AEwZit4xwN-MTyxxsVEA9_j9tE0ZA-8byc5OqTCLg4PHTknKZV9S_iFo5q6WQih-fJWKXGPcfgcsAQ_HS4sdaHw87Q" width="200" /> 
+  <img src="https://miro.medium.com/max/1200/1*ahpxPO0jLGb9EWrY2qQPhg.jpeg" width="200" />
 </p>
 
 <p> O projeto em questão será desenvolvido utilizando o formato de arquitetura MVC, que nos possibilita uma clara separação entre as camadas de visualização do software e das regras de negócio. A arquitetura também tornará mais fácil a manutenção dos códigos e permitirá o desenvolvimento, testes e manutenção de forma isolada entre as camadas.</p>
@@ -22,9 +22,9 @@
 <h2>✔️ Tecnologias utilizadas:</h2>
 
 <p float="left">
-  <img src="https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png" width="300" />
-  <img src="https://www.quest.com/community/cfs-filesystemfile/__key/communityserver-components-secureimagefileviewer/communityserver-blogs-components-weblogfiles-00-00-00-00-39/Slide2.JPG_2D00_1100x500x2.jpg?_=637219525519183603" width="300" /> 
-  <img src="https://blog.geekhunter.com.br/wp-content/uploads/2019/06/docker-na-pratica-como-construir-uma-aplicacao-2-1280x720.png" width="300" />
+  <img src="https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png" width="200" />
+  <img src="https://www.quest.com/community/cfs-filesystemfile/__key/communityserver-components-secureimagefileviewer/communityserver-blogs-components-weblogfiles-00-00-00-00-39/Slide2.JPG_2D00_1100x500x2.jpg?_=637219525519183603" width="200" /> 
+  <img src="https://blog.geekhunter.com.br/wp-content/uploads/2019/06/docker-na-pratica-como-construir-uma-aplicacao-2-1280x720.png" width="200" />
 </p>
 
 <ul>
