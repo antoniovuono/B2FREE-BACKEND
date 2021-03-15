@@ -9,7 +9,6 @@
 
 <p float="left">
   <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/135056738/original/f4a1f882db100ea22db39e053f0f3a942654378e/create-you-a-rest-api.png" width="200" />
-  <img src="https://lh3.googleusercontent.com/proxy/AEwZit4xwN-MTyxxsVEA9_j9tE0ZA-8byc5OqTCLg4PHTknKZV9S_iFo5q6WQih-fJWKXGPcfgcsAQ_HS4sdaHw87Q" width="200" /> 
   <img src="https://miro.medium.com/max/1200/1*ahpxPO0jLGb9EWrY2qQPhg.jpeg" width="200" />
 </p>
 
