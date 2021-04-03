@@ -49,6 +49,7 @@
     <li>cors</li>
 </ul>
 
+
 <h2>Rodando a aplicação:</h2>
 <p> Para rodar a api na sua máquina, basta seguir os seguintes passos... </p>
 
